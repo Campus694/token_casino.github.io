@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#menu {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+#balanceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#balance {
+    font-size: 20px;
+    color: #61dafb;
+}
+
+#tokensDisplay {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffd700; /* Золотой цвет для токенов */
+}
+
+#arrow {
+    font-size: 20px;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+#arrow:hover {
+    transform: scale(1.1);
+}
+
+#gameOptions {
+    margin-top: 20px;
+}
+
+#gameOptions a {
+    display: block;
+    background-color: #333;
+    color: #61dafb;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#gameOptions a:hover {
+    background-color: #4da9d6;
+}
+
+#promoButton {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #61dafb;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#promoButton:hover {
+    background-color: #4da9d6;
+}
+
+#promoSection {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.token-display {
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#exchangeContainer {
+    margin-top: 10px;
+}
+
+.exchangeButton, .viewPriceButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #556dff;
+    color: #1e1e1e;
+    transition: background-color 0.3s;
+}
+
+.exchangeButton:hover, .viewPriceButton:hover {
+    background-color: #4da9d6;
+}
+
+#promoContainer {
+    margin-top: 15px;
+}
+
+.promoButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #1e1e1e;
+    transition: background-color 0.3s;
+}
+
+.promoButton:hover {
+    background-color: #4da9d6;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
