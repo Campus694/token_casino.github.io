@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главное меню</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <!-- Блок с балансом -->
+        <div id="balanceBox">
+            <span id="balance">Баланс: 1000</span>
+            <span id="arrow" onclick="toggleGames()">▼</span>
+        </div>
+
+        <!-- Отображение токенов -->
+        <div id="tokensDisplay">
+            <span id="tokensText">Токены: 0</span>
+        </div>
+
+        <!-- Выпадающее меню с играми -->
+        <div id="gameOptions" class="hidden">
+            <a href="game1.html">Игра: Ракета</a>
+            <a href="game2.html">Игра: Монетка</a>
+            <a href="game3.html">Игра: Мины</a>
+        </div>
+
+        <!-- Кнопка для открытия секции акций и предложений -->
+        <button id="promoButton" onclick="togglePromo()">Акции и предложения</button>
+
+        <!-- Секция обменника и промокода -->
+        <div id="promoSection" class="hidden">
+            <h3>Обменник</h3>
+            <div id="exchangeContainer">
+                <button class="exchangeButton" onclick="exchangeCurrency()">BUY TOKEN</button>
+                <button class="viewPriceButton" onclick="viewTokenPrice()">Смотреть цену</button>
+            </div>
+
+            <h3>Промокод</h3>
+            <div id="promoContainer">
+                <input type="text" id="promoCode" placeholder="Введите промокод" />
+                <button class="promoButton" onclick="redeemPromoCode()">Применить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
